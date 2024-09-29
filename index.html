@@ -22,63 +22,11 @@
 </head>
 
 <body>
-<header class="header">
-    <nav class="main-nav">
-        <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#about">About Us</a></li>
-            <li><a class="main-nav-link" href="#current_fundraising">Current Fundraising</a></li>
-            <li class="display-none"><a href="#">
-                <img alt="Marikate Foundation Logo" class="logo" src="media/logo/01_Marikate_Polska.png"/>
-            </a></li>
-            <li><a class="main-nav-link" href="#our_partners">Our Partners</a></li>
-            <li><a class="main-nav-link important-link" href="#donate">Donate</a></li>
-        </ul>
-    </nav>
-    <nav class="hamburger-main-nav">
-        <a href="#">
-            <img alt="Marikate Foundation Logo" class="logo" src="media/logo/01_Marikate_Polska.png"/>
-        </a>
-        <button class="btn-mobile-nav">
-            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-        </button>
-    </nav>
-</header>
-<main>
-    <section class="hero">
-        <div class="content">
-            <h1 class="item-p white big-h1">Marikate Poland Foundation</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint ut id nulla! Ut laborum
-                laboriosam culpa perferendis porro numquam, eveniet eos magni distinctio similique dolore velit autem.
-                Eos nemo aperiam consectetur a optio distinctio? Odio!
-            </p>
-        </div>
-        <div class="video-container">
-            <video autoplay class="background-video" loop muted>
-                <source src="media/video/header-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="btns-control-container">
-                <div>
-                    <button class="play hide">
-                        <img alt="Play" src="media/img/btns/png/play.png">
-                    </button>
-                    <button class="pause show">
-                        <img alt="Pause" src="media/img/btns/png/pause.png">
-                    </button>
-                </div>
-                <div>
-                    <button class="switchOff hide">
-                        <img alt="Play" src="media/img/btns/png/switchOff.png">
-                    </button>
-                    <button class="switchOn show">
-                        <img alt="Pause" src="media/img/btns/png/switchOn.png">
-                    </button>
-                </div>
+<div id="header-container"></div>
 
-            </div>
-        </div>
-    </section>
+<main>
+    <div id="hero-container"></div>
+
     <section class="main-page-section" id="about">
         <div class="title-section">
             <h2 class="one">About Us</h2>
@@ -238,6 +186,26 @@
 <script src="js2/gsap.js"></script>
 <script src="js2/smoothScroll.js"></script>
 <script src="js2/btns-video-control.js"></script>
+
+<script>
+    function loadHTML(url, targetElementId) {
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById(targetElementId).innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading the HTML file:', error);
+            });
+    }
+    loadHTML('components/header.html', 'header-container');
+    loadHTML('components/hero.html', 'hero-container');
+</script>
 </body>
 
 </html>
