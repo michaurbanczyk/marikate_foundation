@@ -1,0 +1,9 @@
+
+
+.main-page-section {
+    margin: 0 auto;
+    padding: 12rem 6.2rem;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, white, rgb(0, 87, 183), rgb(255, 215, 0), white);
+    border-image-slice: 1;
+}
