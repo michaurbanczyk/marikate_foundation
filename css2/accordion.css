@@ -25,7 +25,7 @@
     }
 }
 
-.accordion-ul li {
+.accordion-ul .accordion-li {
     position: relative;
     padding-bottom: 2rem;
     padding-top: 2rem;
@@ -36,7 +36,7 @@
     line-height: 4rem;
 }
 
-.accordion-ul li input[type="checkbox"] {
+.accordion-ul .accordion-li input[type="checkbox"] {
     position: absolute;
     cursor: pointer;
     width: 60%;
@@ -45,29 +45,29 @@
     opacity: 0;
 }
 
-.accordion-ul li i {
+.accordion-ul .accordion-li i {
     position: absolute;
     transform: translate(-0.5rem, 0);
     margin-top: 1rem;
     right: 0;
 }
 
-.accordion-ul li input[type=checkbox]:checked ~ p {
+.accordion-ul .accordion-li input[type=checkbox]:checked ~ p {
     margin-top: 0;
     max-height: 0;
     opacity: 0;
     transform: translateX(-50%);
 }
 
-.accordion-ul li input[type="checkbox"]:checked ~ i::before {
+.accordion-ul .accordion-li input[type="checkbox"]:checked ~ i::before {
     transform: translate(2px, 0) rotate(45deg);
 }
 
-.accordion-ul li input[type="checkbox"]:checked ~ i::after {
+.accordion-ul .accordion-li input[type="checkbox"]:checked ~ i::after {
     transform: translate(-2px, 0) rotate(-45deg);
 }
 
-.accordion-ul li i::before, ul li i::after {
+.accordion-ul .accordion-li i::before, ul li i::after {
     content: "";
     position: absolute;
     background: #333;
@@ -75,44 +75,44 @@
     height: 9px;
 }
 
-.accordion-ul li i::before {
+.accordion-ul .accordion-li i::before {
     transform: translate(-2px, 0) rotate(45deg);
 }
 
-.accordion-ul li i:after {
+.accordion-ul .accordion-li i:after {
     transform: translate(2px, 0) rotate(-45deg);
 }
 
-.transition, p, ul li i:before, ul li i:after {
+.transition, p, .accordion-ul .accordion-li i:before, ul .accordion-li i:after {
     transition: all 0.25s ease-in-out;
 
 }
 
-.flipIn, h1, ul li {
+.flipIn, .accordion-h1, .accordion-ul .accordion-li {
     animation: flipdown 0.5s ease both;
 }
 
-.accordion-ul li:nth-of-type(1) {
+.accordion-ul .accordion-li:nth-of-type(1) {
     animation-delay: 0.5s;
 }
 
-.accordion-ul li:nth-of-type(2) {
+.accordion-ul .accordion-li:nth-of-type(2) {
     animation-delay: 0.75s;
 }
 
-.accordion-ul li:nth-of-type(3) {
+.accordion-ul .accordion-li:nth-of-type(3) {
     animation-delay: 1s;
 }
 
-.accordion-ul li:nth-of-type(4) {
+.accordion-ul .accordion-li:nth-of-type(4) {
     animation-delay: 1.25s;
 }
 
-.accordion-ul li:nth-of-type(5) {
+.accordion-ul .accordion-li:nth-of-type(5) {
     animation-delay: 1.5s;
 }
 
-.accordion-ul li:last-of-type {
+.accordion-ul .accordion-li:last-of-type {
     padding-bottom: 0;
 }
 

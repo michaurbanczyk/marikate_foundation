@@ -22,12 +22,67 @@
 </head>
 
 <body>
-<div id="header-container"></div>
+
+<header class="header">
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#about">About Us</a></li>
+            <li><a class="main-nav-link" href="#current_fundraising">Current Fundraising</a></li>
+            <li class="display-none"><a href="#">
+                <img alt="Marikate Foundation Logo" class="logo" src="media/logo/01_Marikate_Polska.png"/>
+            </a></li>
+            <li><a class="main-nav-link" href="#our_partners">Our Partners</a></li>
+            <li><a class="main-nav-link important-link" href="#donate">Donate</a></li>
+        </ul>
+    </nav>
+    <nav class="hamburger-main-nav">
+        <a href="#">
+            <img alt="Marikate Foundation Logo" class="logo" src="media/logo/01_Marikate_Polska.png"/>
+        </a>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </nav>
+</header>
 
 <main>
-    <div id="hero-container"></div>
+    <section class="hero">
+        <div class="content">
+            <h1 class="item-p white big-h1">Marikate Poland Foundation</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint ut id nulla! Ut laborum
+                laboriosam culpa perferendis porro numquam, eveniet eos magni distinctio similique dolore velit autem.
+                Eos nemo aperiam consectetur a optio distinctio? Odio!
+            </p>
+        </div>
+        <div class="video-container">
+            <video autoplay class="background-video" loop muted>
+                <source src="/media/video/header-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="btns-control-container">
+                <div>
+                    <button class="play hide">
+                        <img alt="Play" src="media/img/btns/png/play.png">
+                    </button>
+                    <button class="pause show">
+                        <img alt="Pause" src="media/img/btns/png/pause.png">
+                    </button>
+                </div>
+                <div>
+                    <button class="switchOff hide">
+                        <img alt="Play" src="media/img/btns/png/switchOff.png">
+                    </button>
+                    <button class="switchOn show">
+                        <img alt="Pause" src="media/img/btns/png/switchOn.png">
+                    </button>
+                </div>
 
-    <section class="main-page-section" id="about">
+            </div>
+        </div>
+    </section>
+
+    <section class="main-page-section full-height" id="about">
         <div class="title-section">
             <h2 class="one">About Us</h2>
         </div>
@@ -41,23 +96,18 @@
                     is engaged in the organization of providing charitable assistance to a wide range of people
                     persons and organizations in need of it. A significant segment of the practical
                     The Foundation's activity is to provide practical assistance to various institutions
-                    forms of ownership, the administration of social protection of the population, hospitals,
-                    military units and units created in accordance with legislation
-                    of Ukraine, military formations that perform support tasks
-                    territorial integrity and defense of Ukraine, in connection with military aggression
-                    Russia against Ukraine.
+                    forms of ownership, the administration of social protection of the population, hospitals
                 </p>
             </div>
         </div>
     </section>
-    <section class="main-page-section" id="current_fundraising">
+    <section class="main-page-section full-height" id="current_fundraising">
         <div class="title-section">
             <h2 class="one">Current Fundraising</h2>
         </div>
         <div class="grid-main-1 grid-flex-center-element">
             <div class="text-center">
                 <img alt="Rehabilitaion and Sport Compex"
-                     class="interactive-image"
                      src="media/img/main/rehabilitaion-and-sport-complex.png"
                 />
             </div>
@@ -72,7 +122,7 @@
             </div>
         </div>
     </section>
-    <section class="main-page-section" id="our_partners">
+    <section class="main-page-section full-height" id="our_partners">
         <div class="title-section">
             <h2 class="one">Our Partners</h2>
         </div>
@@ -95,7 +145,7 @@
             />
         </div>
     </section>
-    <section class="main-page-section" id="donate">
+    <section class="main-page-section full-height" id="donate">
         <div class="title-section">
             <h2 class="one">Donate</h2>
         </div>
@@ -114,7 +164,7 @@
                     </div>
 
                     <ul class="accordion-ul">
-                        <li>
+                        <li class="accordion-li">
                             <input checked="" type="checkbox">
                             <i></i>
                             <h2>Donations in PLN</h2>
@@ -122,28 +172,28 @@
                             <p class="accordion-paragraph">IBAN: PL 18 1020 2906 0000 1002 0572 0828</p>
                             <p class="accordion-paragraph">SWIFT:  BPKOPLPW</p>
                         </li>
-                        <li>
+                        <li class="accordion-li">
                             <input checked="" type="checkbox">
                             <i></i>
                             <h2>Donations in EUR</h2>
                             <p class="accordion-paragraph">IBAN: PL 20 1020 2906 0000 1902 0572 0836</p>
                             <p class="accordion-paragraph">SWIFT:  BPKOPLPW</p>
                         </li>
-                        <li>
+                        <li class="accordion-li">
                             <input checked="" type="checkbox">
                             <i></i>
                             <h2>Donations in USD</h2>
                             <p class="accordion-paragraph">IBAN: PL 25 1020 2906 0000 1702 0572 0844</p>
                             <p class="accordion-paragraph">SWIFT:  BPKOPLPW</p>
                         </li>
-                        <li>
+                        <li class="accordion-li">
                             <input checked="" type="checkbox">
                             <i></i>
                             <h2>Donations in GBP</h2>
                             <p class="accordion-paragraph">IBAN: PL 76 1020 2906 0000 1002 0572 0851</p>
                             <p class="accordion-paragraph">SWIFT:  BPKOPLPW</p>
                         </li>
-                        <li>
+                        <li class="accordion-li">
                             <input checked="" type="checkbox">
                             <i></i>
                             <h2>Donations in CZK</h2>
@@ -179,33 +229,14 @@
         </div>
     </footer>
 </main>
-<script src="js2/hamburgerMenu.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="js2/main.js"></script>
 <script src="js2/gsap.js"></script>
 <script src="js2/smoothScroll.js"></script>
 <script src="js2/btns-video-control.js"></script>
+<script src="js2/hamburgerMenu.js"></script>
 
-<script>
-    function loadHTML(url, targetElementId) {
-        fetch(url)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then(html => {
-                document.getElementById(targetElementId).innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error loading the HTML file:', error);
-            });
-    }
-    loadHTML('components/header.html', 'header-container');
-    loadHTML('components/hero.html', 'hero-container');
-</script>
 </body>
 
 </html>

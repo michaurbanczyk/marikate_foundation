@@ -405,15 +405,6 @@ footer {
     width: 100%;
 }
 
-.interactive-image {
-    filter: grayscale(100%);
-    transition: all 0.5s ease;
-}
-
-.interactive-image:hover {
-    filter: grayscale(0%);
-}
-
 .line-section {
     display: flex;
     justify-content: center;
