@@ -6,7 +6,7 @@ btnNavEl.addEventListener("click", function () {
 });
 
 const allLinks = document.querySelectorAll("a:link");
-const onlyNavigationLinks = [...allLinks].filter((item) => item.className !== "footer-link")
+const onlyNavigationLinks = [...allLinks].filter((item) => item.id !== "direct")
 onlyNavigationLinks.forEach(function (link) {
     link.addEventListener("click", function (e) {
         e.preventDefault();
@@ -16,10 +16,9 @@ onlyNavigationLinks.forEach(function (link) {
                 top: 0,
                 behavior: "smooth",
             });
-
         if (href !== "#" && href.startsWith("#")) {
             const sectionEl = document.querySelector(href);
-            sectionEl.scrollIntoView(   { behavior: "smooth" });
+            sectionEl.scrollIntoView({behavior: "smooth"});
         }
 
         if (link.classList.contains("main-nav-link"))

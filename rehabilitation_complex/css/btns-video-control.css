@@ -1,0 +1,34 @@
+.hide {
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
+
+.btns-control-container {
+  position: absolute;
+  left: 1vh;
+  bottom: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  /* background-color: rgba(120, 120, 25, 0.5); */
+  /* padding: 1vw; */
+}
+
+.btns-control-container > div {
+  position: relative;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.btns-control-container button {
+  position: absolute;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}

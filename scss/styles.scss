@@ -1,0 +1,9 @@
+// Define a mixin
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// Use the mixin
+.button {
+  @include border-radius(7px);
+}
