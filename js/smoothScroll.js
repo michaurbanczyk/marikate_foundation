@@ -1,6 +1,7 @@
 function smoothScroll(target) {
   const element = document.getElementById(target);
   if (element) {
+    console.log("element.offsetTop", element.offsetTop)
     window.scrollTo({
       top: element.offsetTop,
       behavior: "smooth",

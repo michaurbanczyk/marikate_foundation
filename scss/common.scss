@@ -17,10 +17,12 @@
   border-bottom: 1rem solid transparent;
   border-image: linear-gradient(to right, white, rgb(0, 87, 183), rgb(255, 215, 0), white);
   border-image-slice: 1;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .full-height {
